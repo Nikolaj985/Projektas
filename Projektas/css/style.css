@@ -17,6 +17,11 @@ h3 {
   font-size: 15px;
 }
 
+.button:hover {
+  background-color: #34c759;
+  border-color: #34c759;
+}
+
 .button-green {
   font-family: Roboto, sans-serif;
   font-weight: 300;
@@ -27,6 +32,10 @@ h3 {
   font-size: 15px;
   border-radius: 5px;
   padding: 15px 25px;
+}
+
+.button-green:hover {
+  background-color: #ff0707;
 }
 
 h1 {
@@ -110,9 +119,18 @@ p {
   color: #666666;
 }
 
+.navigation .menu-item a:hover {
+  color: #34c759;
+  text-shadow: 0px 0px 0.5px #34c759;
+}
+
 .navigation .menu-button a {
   text-decoration: none;
   color: #222222;
+}
+
+.navigation .menu-button a:hover {
+  color: #ffffff;
 }
 
 .navigation .menu-button-hidden {
@@ -599,17 +617,24 @@ p {
     display: none;
   }
   .navigation {
-    padding-right: 20px;
-    padding-left: 20px;
+    max-width: none;
+    width: auto;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-right: 0;
   }
   .navigation .menu-button-hidden {
     display: block;
   }
   .hero .hero-container {
+    max-width: none;
+    width: auto;
     padding: 10px 0;
+    margin-right: 0;
+    margin-left: 20px;
   }
   .hero-texts {
-    padding-left: 20px;
+    padding-left: 0;
   }
   h1 {
     margin: 0 0;
@@ -620,11 +645,30 @@ p {
   .hero .hero-button {
     margin-bottom: 30px;
   }
+  .links .links-container {
+    max-width: none;
+    width: auto;
+    margin-right: 20px;
+    margin-left: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .slider-container {
+    max-width: none;
+    width: auto;
+  }
   .slider .top-text h3 {
     padding-top: 30px;
   }
+  .product-container {
+    max-width: none;
+    width: auto;
+  }
   .product-container-text {
     padding: 20px 0 20px 20px;
+    max-width: none;
+    width: auto;
   }
   .product .product-container-text .center-line h2 {
     padding-bottom: 20px;
@@ -639,6 +683,8 @@ p {
   .contact-us .contact-us-container {
     padding-top: 20px;
     padding-bottom: 20px;
+    max-width: none;
+    width: auto;
   }
   .contact-us .contact-us-title h2 {
     padding-bottom: 20px;
@@ -652,6 +698,8 @@ p {
   .blog .blog-container {
     padding-top: 20px;
     padding-bottom: 20px;
+    max-width: none;
+    width: auto;
   }
   .blog .blog-container-adds {
     padding: 0 15px 0 15px;
@@ -664,6 +712,10 @@ p {
   }
   .footer {
     padding-top: 20px;
+  }
+  .footer-container {
+    max-width: none;
+    width: auto;
   }
   .footer .footer-columns {
     padding: 0 20px;
