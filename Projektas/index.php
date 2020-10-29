@@ -8,38 +8,64 @@
 <!DOCTYPE html>
 <head>
   <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=PT+Sans:wght@400;700&family=Roboto:wght@300;400&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=PT+Sans:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
     rel="stylesheet"
   />
   <link rel="stylesheet" href="css/style.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
-  <div class="navigation flex-space-between">
-    <div class="logo"><a href="#"><img src="assets/logo.png" alt="logo.png" /></a></div>
+  <nav class="navigation flex-space-between">
+    <div class="logo">
+      <a href="#">
+        <img src="assets/logo.png" alt="logo.png" />
+      </a>
+    </div>
     <div class="top-menu flex-space-between font-roboto-light">
-      <div class="menu-item"><a href="#">Home</a></div>
-      <div class="menu-item"><a href="#">Mega Menu</a></div>
-      <div class="menu-item"><a href="#">About</a></div>
-      <div class="menu-item"><a href="#">Blog</a></div>
-      <div class="menu-item"><a href="#">Contact</a></div>
+      <div class="menu-item">
+        <a href="#">Home</a>
+      </div>
+      <div class="menu-item">
+        <a href="#">Mega Menu</a>
+      </div>
+      <div class="menu-item">
+        <a href="#">About</a>
+      </div>
+      <div class="menu-item">
+        <a href="#">Blog</a>
+      </div>
+      <div class="menu-item">
+        <a href="#">Contact</a>
+      </div>
       <div class="menu-button">
         <a class="button" href="#">Get Webify Today</a>
       </div>
       <div class="menu-button-hidden">
         <a class="button" href="#">Menu</a>
         <ul class="menu-button-hidden-dropdown">
-          <li class="drop"><a class="button" href="#">Mega Menu</a></li>
-          <li class="drop"><a class="button" href="#">About</a></li>
-          <li class="drop"><a class="button" href="#">Blog</a></li>
-          <li class="drop"><a class="button" href="#">Contact</a></li>
-          <li class="drop"><a class="button" href="#">Get Webify Today</a></li>  
-          <li class="drop"><a class="button" href="#">Home</a></li>
+          <li class="drop">
+            <a class="button" href="#">Mega Menu</a>
+          </li>
+          <li class="drop">
+            <a class="button" href="#">About</a>
+          </li>
+          <li class="drop">
+            <a class="button" href="#">Blog</a>
+          </li>
+          <li class="drop">
+            <a class="button" href="#">Contact</a>
+          </li>
+          <li class="drop">
+            <a class="button" href="#">Get Webify Today</a>
+          </li>  
+          <li class="drop">
+            <a class="button" href="#">Home</a>
+          </li>
         </ul>
       </div>
     </div>
-  </div>
-  <div class="hero">
+  </nav>
+  <header class="hero">
     <div class="hero-container flex-space-around">
       <div class="hero-texts">
         <div class="hero-main">
@@ -59,31 +85,45 @@
         <img src="assets/hero.png" alt="hero.png" />
       </div>
     </div>
-  </div>
-  <div class="links">
+  </header>
+  <section class="links">
     <div class="links-container flex-space-around">
       <div class="link">
-        <a href="#"><img src="assets/client-1.png" alt="client-1.png" /></a>
+        <a href="#">
+          <img src="assets/client-1.png" alt="client-1.png" />
+        </a>
       </div>
       <div class="link">
-        <a href="#"><img src="assets/client-2.png" alt="client-2.png" /></a>
+        <a href="#">
+          <img src="assets/client-2.png" alt="client-2.png" />
+        </a>
       </div>
       <div class="link">
-        <a href="#"><img src="assets/client-3.png" alt="client-3.png" /></a>
+        <a href="#">
+          <img src="assets/client-3.png" alt="client-3.png" />
+        </a>
       </div>
       <div class="link">
-        <a href="#"><img src="assets/client-4.png" alt="client-4.png" /></a>
+        <a href="#">
+          <img src="assets/client-4.png" alt="client-4.png" />
+        </a>
       </div>
       <div class="link">
-        <a href="#"><img src="assets/client-5.png" alt="client-5.png" /></a>
+        <a href="#">
+          <img src="assets/client-5.png" alt="client-5.png" />
+        </a>
       </div>
     </div>
-  </div>
+  </section>
   <!--Praleista sekcija-->
-  <div class="slider">
+  <section class="slider">
     <div class="slider-container font-roboto-regular">
-      <div class="top-text font-roboto-regular"><h3>Organic Business Features</h3></div>
-      <div class="middle-text font-pt-sans-regular"><h2>Our Unique Features</h2></div>
+      <div class="top-text font-roboto-regular">
+        <h3>Organic Business Features</h3>
+      </div>
+      <div class="middle-text font-pt-sans-regular">
+        <h2>Our Unique Features</h2>
+      </div>
       <div class="objects flex-space-between">
         <div class="object fade">
           <div class="slider-image">
@@ -236,10 +276,10 @@
         <div class="slider-selector" onclick="currentSlide(2)"></div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!--Product page-->
-  <div class="product">
+  <section class="product">
     <div class="product-blur">
       <div class="product-container flex-space-around">
         <div class="product-container-text">
@@ -284,8 +324,8 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="contact-us">
+  </section>
+  <section class="contact-us">
     <div class="contact-us-container">
       <div class="contact-us-title font-open-sans-regular">
         <h2>Our Handpicked Products</h2>
@@ -293,19 +333,19 @@
       <div class="contact-us-form font-pt-sans-regular">
         <form action="index.php" method="post">
           <label for="yname">Your name</label>
-          <input type="text" id="yname" name="vardas" />
+          <input type="text" id="yname" name="vardas" required/>
 
           <label for="email">Your email</label>
-          <input type="email" id="email" name="email" />
+          <input type="email" id="email" name="email" required/>
           <label for="message">Message</label>
-          <textarea id="message" name="message"></textarea>
+          <textarea id="message" name="message" required></textarea>
 
           <input type="submit" name="submit" value="Send"/>
         </form>
       </div>
     </div>
-  </div>
-  <div class="product">
+  </section>
+  <section class="product">
     <div class="product-blur">
       <div class="product-bottom-container">
         <div class="product-bottom-ttext font-roboto-regular">
@@ -320,9 +360,9 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="blog">
+  <section class="blog">
     <div class="blog-container">
       <div class="blog-container-top-text font-roboto-light">
         <h3>Daily Blog journal</h3>
@@ -381,8 +421,8 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="footer font-roboto-regular">
+  </section>
+  <footer class="footer font-roboto-regular">
     <div class="footer-container">
       <div class="footer-columns flex-space-between">
         <div class="footer-column footer-cone">
@@ -426,6 +466,6 @@
         &copy; Built with pride and caffeine. All rights reserved.
       </div>
     </div>
-  </div>
+  </footer>
   <script src="js/app.js"></script>
 </body>
